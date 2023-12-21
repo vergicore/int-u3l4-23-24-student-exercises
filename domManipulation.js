@@ -21,9 +21,10 @@ let image = document.querySelector('.image');
 //   - The `hobby` paragraph.
 //   - The `location` paragraph.
 
-contentButton.addEventListener('click', function() {
-
-
+contentButton.addEventListener('mouseover', function() {
+myName.innerHTML="Sovereign";
+myHobby.innerHTML="I like to watch TV";
+myLocation.innerHTML="I live in NYC";
 
 
 
@@ -31,6 +32,9 @@ contentButton.addEventListener('click', function() {
 });
 
 // 3. Add an event listener to the `image1Button`
+image1Button.addEventListener('click', function() {
+image.src="https://www.frommers.com/system/media_items/attachments/000/868/461/s980/Frommers-New-York-City-Getting-Around-1190x768.jpg?1647177178";
+});
 // 4. When clicked, it should change the source of `image` to another image URL.
 
 
@@ -38,6 +42,9 @@ contentButton.addEventListener('click', function() {
 
 
 // 5. Add an event listener to the `image2Button`
+image2Button.addEventListener('click', function() {
+image.src="https://fullsuitcase.com/wp-content/uploads/2022/05/One-day-in-New-York-USA-NYC-day-trip-itinerary.jpg";
+});
 // 6. When clicked, it should change the source of `image` to another image URL.
 
 
